@@ -1,0 +1,4 @@
+Creat a variable called hour and name then save the current hour of the day (use 24-hou formate and save it as a number between 0 and 23) and the name.
+  * if hour is between (6-12), display 'Good morning name!' in the console
+  * if hour is between (13-17), display 'Good afternoon name!' in the console
+  * if hour is between (18-24), display 'Good night name!' in the console
