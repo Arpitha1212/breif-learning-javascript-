@@ -1,0 +1,19 @@
+<!-- Write a JavaScript program to find out if 1st January will be a Sunday between 2015 and 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+     for (var year = 2015; year <= 2024; year++) {
+       var sunday = new Date(year,0,1);
+       if(sunday.getDay()===0){
+        console.log("sunday: "+year);
+       }
+     }
+  </script>
+</body>
+</html>
