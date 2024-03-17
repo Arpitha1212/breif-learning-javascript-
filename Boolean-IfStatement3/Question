@@ -1,0 +1,3 @@
+Generate a random number with Math.random().then creat 
+ * if-statement where it checks the number is less than 0.5 or else then store its result in an variable result.
+ *  Then create a variable named guess store true or false in it then again using if statement compare the values of result and guess variable if it true then dispaly "You Win." in the console or "You Lose."
