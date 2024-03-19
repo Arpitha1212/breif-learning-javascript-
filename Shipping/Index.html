@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping</title>
+  <style>
+    input{
+      font-size:15px;  
+      padding:10px;
+      color:gray;
+    }
+    .Calculate-button{
+      font-size:15px;  
+      padding:11px 15px;
+      background-color: rgb(54, 157, 54);
+      border:none;
+      color:white;
+    }
+  </style>
+
+</head>
+<body>
+  <p>Amazon Shipping Calculator</p>
+  <p>Order under $40 = +$10 Shipping</p>
+  <p>Order over $40 = Free Shipping</p>
+  <input type =text class="js-amount" placeholder="Order cost" onkeydown="handleKey(event);" >
+  <!-- this event attribute onkeydown will gets you output by clicking on enter button -->
+  <button  onclick="calculate();" class="Calculate-button">Calculate</button>
+  <p class="result"></p>
+
+  <script>
+    function handleKey(event){
+      if(event.key==='Enter'){
+        calculate();
+      }
+    }
+    function calculate(){
+      const Amount= document.querySelector('.js-amount');
+      let cost = Number(Amount.value);/*After dom the value will be in string so we need to convert them manually*/
+      if(cost < 40){
+      cost = cost + 10;
+    }
+    document.querySelector('.result').innerHTML =`$${cost}`;
+ }
+  </script>
+</body>
+</html>
