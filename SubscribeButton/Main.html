@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .js-button{
+      background-color: black;
+      border:none;
+      color:white;
+      padding:10px 15px 10px 15px;
+      border-radius:20px;
+    }
+    .js-subscribed{
+      background-color: gray;
+      color:white;
+    }    
+  </style>
+</head>
+<body>
+  <p>YouTube Subscribe Button</p>
+  <button onclick="Subscribe()" class="js-button">Subscribe</button>
+</body>
+<script>
+  document.title='youtube button';
+  function Subscribe(){
+    const ButtonElem = document.querySelector('.js-button');
+    if(ButtonElem.innerText==='Subscribe'){
+      ButtonElem.innerText='Subscribed';/*if want to change the value of the object the you can use '='*/
+      ButtonElem.classList.add('js-subscribed');
+    }else{
+      ButtonElem.innerText='Subscribe';
+      ButtonElem.classList.remove('js-subscribed');
+    }
+  }
+</script>
+</html>

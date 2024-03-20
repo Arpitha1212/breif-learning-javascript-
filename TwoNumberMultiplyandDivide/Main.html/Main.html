@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mutiplication & Division</title>
+  <style>
+    .box{
+      text-align: center;
+      padding-top: 100px;
+      width:500px;
+      height:250px;
+      border-width:2px;
+      border-style: solid;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <form>
+      <div class="box">
+        1st Number:  <input type="text" class="num1">
+        <br><br>
+        2st Number:  <input type="text"  class="num2">
+        <br>
+        <br>
+        <input type="button" value="Multiply" onclick="multiply();">
+        <input type="button" value="Division" onclick="divide();"> 
+      </form>
+        <p>The Result Is: <span id="result"> </span></p>
+        </div>
+
+      <script>
+        function multiply(){
+          var firstNum = parseInt(document.querySelector('.num1').value);
+          var secNum = parseInt(document.querySelector('.num2').value);
+          var result =firstNum*secNum;
+          document.getElementById('result').innerText = result;
+        }
+
+        function divide(){
+          var firstNum = parseInt(document.querySelector('.num1').value);
+          var secNum = parseInt(document.querySelector('.num2').value);
+          var result =firstNum/secNum;
+          document.getElementById('result').innerText = result;
+        }
+
+      </script>
+  </center>
+</body>
+</html>
