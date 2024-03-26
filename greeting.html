@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var name = "johnny"
+    console.log(greet(name));
+    function greet(name){
+      var output = (name === 'johnny') ?'Hey my friend!' : 'Hi';
+      return output
+    }
+
+    console.log(number(5));
+    function number (num){
+      if(num<0){
+        return num
+      }else{
+        return "-"+num
+      }
+    }
+    
+    var summation = function(num){
+      var sum=0;
+      for(let i=1;i<=num;i++){
+        sum=sum+i;
+      }
+      return sum
+    }
+    
+    console.log(summation(8))
+    
+  </script>
+</body>
+</html>
