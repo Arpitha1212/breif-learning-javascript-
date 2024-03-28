@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Count-Vowels</title>
+</head>
+<body>
+<script>
+  var str = "abracadabra"
+  console.log(getCount(str));
+  function getCount(str) {
+  var count=0;
+  var vowels =['a','e','i','o','u'];
+  for(let i=0;i<str.length;i++){
+    if(vowels.includes(str.charAt(i))){
+      count++;
+    }
+  }
+  return count;
+}
+</script>
+  
+</body>
+</html>
